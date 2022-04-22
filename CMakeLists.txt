@@ -25,9 +25,9 @@ project(pyOCCT VERSION 7.5.3.1 LANGUAGES C CXX)
 # SETTINGS
 # --------------------------------------------------------------------------- #
 set(pyOCCT_MAJOR_VERSION 7)
-set(pyOCCT_MINOR_VERSION 5)
-set(pyOCCT_PATCH_VERSION 3)
-set(pyOCCT_TWEAK_VERSION 1)
+set(pyOCCT_MINOR_VERSION 6)
+set(pyOCCT_PATCH_VERSION 1)
+set(pyOCCT_TWEAK_VERSION 0)
 
 # Set CXX standard
 set(CMAKE_CXX_STANDARD 17 CACHE STRING "C++ version selection")
@@ -108,7 +108,7 @@ endif()
 include_directories(inc)
 if(NOT DEFINED OpenCASCADE_INCLUDE_DIR OR NOT DEFINED OpenCASCADE_LIBRARY_DIR)
     message(STATUS "Searching for OpenCASCADE...")
-    find_package(OpenCASCADE 7.5.3 REQUIRED)
+    find_package(OpenCASCADE 7.6.1 REQUIRED)
 endif()
 
 if(NOT EXISTS ${OpenCASCADE_INCLUDE_DIR})

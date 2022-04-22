@@ -2,8 +2,8 @@ name: binder
 channels:
   - conda-forge
 dependencies:
-  - python=3.7
+  - python=3.10
   - clangdev
   - python-clang
-  - occt=7.5.3
+  - occt=7.6.1
   - tbb-devel
